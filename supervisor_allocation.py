@@ -18,8 +18,8 @@ st.title("Supervisor Assignment System")
 # Sidebar inputs for CSV file paths and OpenAI API key
 st.sidebar.header("Settings")
 openai_api_key = st.sidebar.text_input("Enter OpenAI API Key", type="password")
-lecturers_path = st.sidebar.text_input("Path to Lecturers CSV", "C:/Users/YourUsername/Desktop/lecturers.csv")
-students_path = st.sidebar.text_input("Path to Students CSV", "C:/Users/YourUsername/Desktop/students.csv")
+lecturers_path = st.sidebar.text_input("Path to Lecturers CSV", "C:/Users/Admin/Desktop/lecturers.csv")
+students_path = st.sidebar.text_input("Path to Students CSV", "C:/Users/Admin/Desktop/students.csv")
 
 if st.sidebar.button("Load and Process Data"):
     try:
