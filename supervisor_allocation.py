@@ -1,21 +1,16 @@
 import streamlit as st
 import pandas as pd
-import sys
 import os
+import sys
 
-# Add the current directory to Python's search path
+# Add the current directory to Python's search path to locate assignment_model.py
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
-# Debugging: Check if the module can be found
-print("Current working directory:", os.getcwd())
-print("Python path:", sys.path)
 
 # Try importing the assignment_model module
 try:
     from assignment_model import assign_topics
 except ModuleNotFoundError as e:
     st.error(f"Error: {e}")
-    st.stop()
 
 # Streamlit app title
 st.title("Supervisor Assignment System")
